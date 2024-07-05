@@ -5,34 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
-        <nav>
-            <ul class="menu">
-                <li><a href="">Works</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="">Contact</a></li>
+        <nav id="navbar">
+            <a class="new-brand" href="">Veridiana Lucena de Marchi</a>
+            <ul class="nav-list">
+                <li class="nav-item"><a href="">Works</a></li>
+                <li class="nav-item"><a href="">Blog</a></li>
+                <li class="nav-item"><a href="">Contact</a></li>
             </ul>
+            <div class="hamburger-menu">
+                <svg width="30" height="20" viewBox="0 0 30 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g id="menu">
+                <path id="Vector 16" d="M0 1H30" stroke="#00A8CC" stroke-width="2"/>
+                <path id="Vector 17" d="M0 10H30" stroke="#00A8CC" stroke-width="2"/>
+                <path id="Vector 18" d="M0 19H30" stroke="#00A8CC" stroke-width="2"/>
+                </g>
+                </svg>                    
+            </div>
         </nav>
     </header>
 
     <main>
-        <div class="presentation">
-            <h1>Hi, I am Veridiana,<br>Front-End Developer</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, non!</p>
-            <figure>
-                <img src="./assets/fotoperfil.jpeg" alt="">
-            </figure>
-            <button>Download Resume</button>
-        </div>
+        <section class="banner">
+            <div class="banner-content">
+                <h1 class="banner-content-title">Hi, I am Veridiana,<br>Front-End Developer</h1>
+                <p class="banner-content-subtitle">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud -.</p>
+                <button class="banner-content-btn">Download Resume</button>
+            </div>
+            <img src="./assets/fotoperfil.jpeg" alt="" class="banner-img">
+        </section>
     
-        <section id="recent-posts">
-            <h2>Recent posts</h2>
-            <a href="">View All</a>
-            <div>
-    
+        <section id="posts">
+            <div class="posts-content">
+                <div class="posts-content-header">
+                    <h2 class="section-title">Recent posts</h2>
+                    <a class="view-all-link" href="">View All</a>
+                </div>
+                <div class="posts-cards">
+                    <div class="post-card">
+                        <h3>Making a design system from scratch</h3>
+                        <span>12 Feb 2020</span>
+                        <span>Design, Pattern</span>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                <div class="post-card">
+                    <h3>Creating pixel perfect icons in Figma</h3>
+                    <span>12 Feb 2020</span>
+                    <span>Design, Pattern</span>
+                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                </div>
             </div>
         </section>
     </main>
